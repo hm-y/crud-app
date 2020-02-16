@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="HTTP5101_School_System.Layout" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>School Database</title>
+    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+</head>
+<body>
+    <header>
+        <h1>SCHOOL DATABASE</h1>
+        <div id="main_nav">
+            <a id="students_button" class="nav_button" href="ListStudents.aspx">Students</a>
+            <a id="classes_button" class="nav_button" href="ListClasses.aspx">Classes</a>
+            <a id="teachers_button" class="nav_button" href="ListTeachers.aspx">Teachers</a>
+        </div>
+    </header>
+    <div id="main_content">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <footer>
+        <h3>HTTP5101 Web Application Development Assignment 2ab</h3>
+        <p>N01375163: Hilmi Murat Yildirim</p>
+        <p>N01359582: Bhanudai Khairwal</p>
+    </footer>
+</body>
+</html>
